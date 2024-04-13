@@ -4,3 +4,54 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  background: #191919;
+}
+
+.gallery {
+  width: 900px;
+  /* width: 100%; */
+  display: flex;
+  overflow-x: scroll;
+}
+
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* grid-gap: 20px; */
+  padding: 20px;
+  flex: none;
+}
+
+.gallery div img {
+  height: 50vh;
+  filter: grayscale(100%);
+  transition: transform 0.5s;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto;
+  margin-top: 15vh;
+}
+
+#backBtn,
+#nextBtn {
+  cursor: pointer;
+  width: 50px;
+  margin: 40px;
+}
+
+.gallery div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
