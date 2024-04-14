@@ -10,8 +10,7 @@ body {
 }
 
 .gallery {
-  width: 900px;
-  /* width: 100%; */
+  width: 840px;
   display: flex;
   overflow-x: scroll;
 }
@@ -20,7 +19,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  /* grid-gap: 20px; */
+  grid-gap: 20px;
   padding: 20px;
   flex: none;
 }
@@ -40,7 +39,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto auto;
-  margin-top: 15vh;
+  margin-top: 20vh;
 }
 
 #backBtn,
